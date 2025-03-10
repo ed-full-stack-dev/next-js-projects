@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+body {
+    font-family: "Inter", sans-serif;
+}
+.warning-bg {
+    @apply bg-orange-400;
+}
+
+/* Home Page */
+.home-page {
+    @apply   flex flex-col;
+}
+.intro {
+    @apply text-center p-4 md:text-left md:max-w-4xl;
+}
+
+.intro__avatar {
+    @apply size-14 my-5;
+}
+
+.intro__title {
+    @apply text-2xl  font-medium md:tracking-tight text-zinc-800 md:text-4xl dark:text-zinc-600;
+}
+
+.intro__subtitle {
+    @apply mt-6 text-base text-zinc-600 dark:text-zinc-400;
+}
+
+.intro__social-links {
+    @apply mt-6 flex gap-6;
+}
+
+.social-icon {
+    @apply text-3xl text-neutral-300 hover:text-teal-500 transition-colors duration-200;
+}
